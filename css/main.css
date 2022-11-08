@@ -818,6 +818,7 @@ input::-webkit-inner-spin-button {
 
 body {
   background-color: var(--Very_dark_esaturated_blue);
+  font-family: 'League Spartan', sans-serif;
 }
 
 .bac_dark_desaturated {

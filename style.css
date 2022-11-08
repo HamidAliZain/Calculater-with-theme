@@ -76,6 +76,7 @@ input::-webkit-inner-spin-button {
 
 body {
     background-color: var(--Very_dark_esaturated_blue);
+    font-family: 'League Spartan', sans-serif;
 }
 
 .bac_dark_desaturated {
@@ -108,12 +109,15 @@ body {
 .font {
     font-family: 'Font Awsome 5 Free';
 }
+
 .sliderbg1 {
     background-color: var(--Red);
 }
+
 .sliderbg2 {
-      background-color: var(--Orange);
+    background-color: var(--Orange);
 }
+
 .sliderbg3 {
-     background-color: var(--Pure-cyan);
+    background-color: var(--Pure-cyan);
 }
