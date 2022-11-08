@@ -5,7 +5,200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <!--Cdn Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Cdn Font Awsome -->
     <title>Calculator</title>
   </head>
-  <body></body>
+  <body class="transition-all ease-linear duration-75">
+    <main>
+      <div class="mx-auto max-w-md sm:max-w-xl px-2 my-12">
+        <div class="flex justify-between items-end">
+          <div class="w-3/4">
+            <h1
+              class="text-3xl font-bold ml-2 text-white text transition-all ease-linear"
+            >
+              Cacl
+            </h1>
+          </div>
+          <div class="w-1/3 flex justify-between items-end">
+            <h1
+              class="font-bold text-sm mt-4 text-white text transition-all ease-linear"
+            >
+              THEME
+            </h1>
+            <div class="w-1/2">
+              <div class="flex justify-between px-2">
+                <label
+                  for="one"
+                  class="block text-md text transition-all ease-linear text-white"
+                >
+                  1</label
+                >
+                <label
+                  for="two"
+                  class="block text-md text transition-all ease-linear text-white"
+                >
+                  2</label
+                >
+                <label
+                  for="three"
+                  class="block text-md text transition-all ease-linear text-white"
+                >
+                  3</label
+                >
+              </div>
+              <div
+                class="backChange  flex justify-between py-1 border rounded-full px-2"
+              >
+                <input
+                  type="radio"
+                  name="toggle"
+                  id="one"
+                  class="sliderButton appearance-none cursor-pointer sliderbg1 rounded-full w-4 h-4"
+                />
+                <input
+                  type="radio"
+                  name="toggle"
+                  id="two"
+                  class="sliderButton appearance-none cursor-pointer sliderbg2 rounded-full w-4 h-4 opacity-0"
+                />
+                <input
+                  type="radio"
+                  name="toggle"
+                  id="three"
+                  class="sliderButton appearance-none cursor-pointer sliderbg3 rounded-full w-4 h-4 opacity-0"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bac_dark_desaturated backChange display text transition-all ease-linear flex flex-col justify-center rounded-xl w-full h-20 text-3xl text-right px-2 my-6 appearance-none text-white font-bold sm:text-3xl"
+        ></div>
+        <div class="bac_dark_desaturated backChange bg-slate-100">
+          <div class="grid grid-rows-2 grid-cols-4">
+            <button
+              value="7"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              7
+            </button>
+            <button
+              value="8"
+              class="btnColor buttons btn buttons2 h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              8
+            </button>
+            <button
+              value="9"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              9
+            </button>
+            <button
+              class="Reset buttons delRes h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl active:py-6"
+              value="D"
+            >
+              DEL
+            </button>
+            <button
+              value="4"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              4
+            </button>
+            <button
+              value="5"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              5
+            </button>
+            <button
+              value="6"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              6
+            </button>
+            <button
+              value="+"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              +
+            </button>
+            <button
+              value="1"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              1
+            </button>
+            <button
+              value="2"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              2
+            </button>
+            <button
+              value="3"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              3
+            </button>
+            <button
+              value="-"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              -
+            </button>
+            <button
+              value="."
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              .
+            </button>
+            <button
+              value="0"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              0
+            </button>
+            <button
+              value="/"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              /
+            </button>
+            <button
+              value="*"
+              class="btnColor buttons btn h-16 m-2 sm:m-4 rounded-lg font-bold text-xl transition-all ease-linear sm:text-3xl hover:bg-white active:py-6"
+            >
+              X
+            </button>
+          </div>
+          <div class="flex justify-between">
+            <button
+              class="Reset buttons delRes h-16 m-4 rounded-md font-bold text-xl sm:text-3xl transition-all ease-linear w-1/2 active:py-6"
+              value="C"
+            >
+              RESET
+            </button>
+            <button
+              value="="
+              class="buttons equal h-16 m-4 rounded-md font-bold text-xl sm:text-3xl transition-all ease-linear w-1/2 active:py-6"
+            >
+               =
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
